@@ -12,6 +12,7 @@ html {
 
 img {
   max-width: 100%;
+  max-height: 100%;;
 }
 
 body {
@@ -23,22 +24,61 @@ body {
   padding: 0;
 }
 
-main {
-  background-color: white;
-  text-align: center;
-  border-bottom: 5px solid #ffd034;
-  border-top: 5px solid #ffd034;
-}
 header {
-  color: white;
-  text-transform: uppercase;
-  font-weight: normal;
   display: flex;
   flex-flow: row wrap;
+  height: fit-content;
+  color: white;
+  text-transform: uppercase;
   justify-content: center;
-  align-items: center;
+  border: solid violet;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 0 0 1.5rem 0;
+  margin-top: 0;
+  border: solid green;
+}
+nav ul{
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
   gap: 1rem;
+  margin: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+main {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: white;
+  text-align: center;
+  border-bottom: 7px solid #ffd034;
+  border-top: 7px solid #ffd034;
 }
 h1 {
-  font-weight: 300;
+  font-weight: normal;
+  padding-top: 1rem;
+  border: solid red;
+  margin: 0;
+}
+
+.welcomebanner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.button {
+  display: inline;
+  justify-self: end;;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  background: green;
 }
