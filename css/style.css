@@ -11,6 +11,7 @@ html {
 }
 :root {
   --button-color: #209d5c;
+  --card-color: #cadbf8;
   --card-bttn-color: #06327d;
 }
 
@@ -95,15 +96,41 @@ h1 {
 .welcbantxt {
   display: flex;
   flex-flow: column wrap;
-
   justify-content: left;
+}
+
+.welcbantxt p {
+  font-size: 1rem;
 }
 
 .button {
   display: inline;
-  justify-self: end;;
+  justify-self: end;
+  font-size: 1rem;
   width: fit-content;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   background-color: var(--button-color);
+}
+.ourcof {
+
+  background-color: var(--card-color);
+}
+.ourcof h2 {
+  padding: 1rem 0 0 2rem;;
+  margin: 2rem 0 0 0;
+  font-weight: normal;
+}
+.card {
+  padding: 2rem;
+  font-size: 1rem;
+}
+.card h3{
+  font-weight: normal;
+}
+.card .bttn{
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--card-bttn-color);
 }
