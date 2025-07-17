@@ -128,9 +128,31 @@ h1 {
 .card h3{
   font-weight: normal;
 }
+.card img {
+  border-radius: 0.5rem;
+}
 .card .bttn{
   width: fit-content;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   background-color: var(--card-bttn-color);
+}
+footer {
+  justify-items: center;
+  text-align: center;
+  font-weight: normal;
+  color: white;
+}
+footer h2 {
+  margin: 0;
+  font-weight: 500;
+  padding-bottom: 0;
+}
+footer h7 {
+  font-size: 0.6rem;
+  padding: 0;
+  margin: 0;
+}
+footer h5 {
+  font-weight: 300;
 }
