@@ -11,6 +11,7 @@ html {
 }
 :root {
   --button-color: #209d5c;
+  --card-bttn-color: #06327d;
 }
 
 img {
@@ -66,7 +67,6 @@ main {
   display: flex;
   flex-flow: column wrap;
   background-color: white;
-  text-align: center;
   border-bottom: 7px solid #ffd034;
   border-top: 7px solid #ffd034;
 }
@@ -85,7 +85,7 @@ h1 {
 
 .welcomebanner img {
   object-fit: cover;
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .welcomebanner h2 {
@@ -95,8 +95,7 @@ h1 {
 .welcbantxt {
   display: flex;
   flex-flow: column wrap;
-  gap: 1rem;
-  padding: 2rem;
+
   justify-content: left;
 }
 
