@@ -117,6 +117,10 @@ main {
   border-radius: 0.5rem;
   background-color: var(--button-color);
 }
+.card .button {
+  display: block;
+  color: white;
+}
 .ourcof {
 
   background-color: var(--card-color);
