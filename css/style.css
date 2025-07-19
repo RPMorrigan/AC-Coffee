@@ -36,12 +36,17 @@ header {
   text-transform: uppercase;
   justify-content: center;
   align-items: baseline;
+  max-width: 100%;
 }
 
 header img{
+  display: inline;
   object-fit: scale-down;
 }
+.logowrap {
+  width: 100%;
 
+}
 nav {
   display: flex;
   width: 100%;
@@ -51,7 +56,7 @@ nav {
 }
 nav ul{
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   list-style-type: none;
   gap: 1rem;
   margin: 0;
@@ -64,18 +69,18 @@ a {
   text-transform: uppercase;
 }
 
+h1 {
+  font-weight: normal;
+  padding-top: 0;
+  margin: 0;
+  margin-left: 0.5rem;
+}
 main {
   display: flex;
   flex-flow: column wrap;
   background-color: white;
   border-bottom: 7px solid #ffd034;
   border-top: 7px solid #ffd034;
-}
-h1 {
-  font-weight: normal;
-  padding-top: 0;
-  margin: 0;
-  margin-left: 0.5rem;
 }
 
 .welcomebanner {
@@ -157,6 +162,9 @@ footer h7 {
 footer h5 {
   font-weight: 300;
 }
+.latte-page {
+  min-width: 100%;
+}
 
 @media (min-width: 750px) {
   .welcomebanner img {
@@ -190,12 +198,20 @@ footer h5 {
     margin: auto;
   }
   header {
+    display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
+  }
+  nav {
+    justify-content: right;
   }
   .logowrap {
     display: flex;
     align-items: baseline;
     padding: 1rem;
+  }
+  h1 {
+    min-width: fit-content
   }
   .welcomebanner img {
     width: 100%;
