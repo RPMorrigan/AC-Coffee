@@ -30,22 +30,32 @@ body {
 
 header {
   display: flex;
-  flex-flow: row wrap;
-  height: fit-content;
   color: white;
   text-transform: uppercase;
-  justify-content: center;
-  align-items: baseline;
   max-width: 100%;
 }
 
-header img{
-  display: inline;
-  object-fit: scale-down;
-}
 .logowrap {
+  display: flex;
+  flex-flow: row wrap;
   width: 100%;
-
+}
+.headwrap {
+  display: inherit;
+  margin-left: auto;
+  margin-right: auto;
+}
+header img{
+  object-fit: scale-down;
+  margin-left: auto;
+}
+h1 {
+  font-weight: normal;
+  padding-top: 2rem;;
+  margin: 0;
+  margin-left: 0.5rem;
+  margin-right: auto;
+  height:fit-content;
 }
 nav {
   display: flex;
@@ -69,12 +79,6 @@ a {
   text-transform: uppercase;
 }
 
-h1 {
-  font-weight: normal;
-  padding-top: 0;
-  margin: 0;
-  margin-left: 0.5rem;
-}
 main {
   display: flex;
   flex-flow: column wrap;
@@ -171,6 +175,14 @@ footer h5 {
 }
 
 @media (min-width: 750px) {
+  .headwrap {
+    Padding-top: 1rem;
+    margin-left: 2rem;
+  }
+  nav {
+    justify-content: right;
+    padding-right: 2rem;
+  }
   .welcomebanner img {
   object-fit: cover;
   padding: 0;
@@ -212,7 +224,7 @@ footer h5 {
   .logowrap {
     display: flex;
     align-items: baseline;
-    padding: 1rem;
+    padding: 0 1rem;
   }
   h1 {
     min-width: fit-content
