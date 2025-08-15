@@ -28,8 +28,47 @@
             </nav>
         </div>
     </header>
-    <main class="latte-page">
-        
+    <main class="contact-page">
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form id="contactForm" action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+                <br>
+
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+                <br>
+
+                <label for="flavor">Choose your favorite! </label>
+                <select id="flavor" name="flavor" required>
+                    <option value="latte">Latte</option>
+                    <option value="coffee">Coffee</option>
+                    <option value="espresso">Espresso</option>
+                    <option value="mocha">Mocha</option>
+                    <option value="cappuccino">Cappuccino</option>
+                </select>
+                <br>
+
+                <label for="buywork">Are you a client or applicant?</label>
+                <input type="radio" id="client" name="buywork" value="client" required>
+                <label for="client">Client</label>
+                <input type="radio" id="applicant" name="buywork" value="applicant" required>
+                <label for="applicant">Applicant</label>
+                <br><br>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="userInput"></div>
     </main>
     <footer>
         <img src="https://assets.codepen.io/t-15440/cannons-coffee-logo.png"
