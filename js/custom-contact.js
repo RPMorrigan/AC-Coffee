@@ -14,7 +14,6 @@ function onSubmit(e) {
     let phone = dataObj.phone;
     let comments = dataObj.comments;
     let flavor = dataObj.flavor;
-    let buywork = dataObj.buywork;
 
     let confirmationMsg = document.createElement("p");
     confirmationMsg.textContent = `Thank you ${name}! We appreciate your interest in [buying/seeking emplayment]. Your favorite coffee flavor is ${flavor}, and your comments are ${comments}. We will soon contact you at ${email} or ${phone}.`;
