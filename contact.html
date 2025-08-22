@@ -9,12 +9,11 @@
 </head>
 
 <body>
-    <script src="js/custom-contact.js"></script>
     <header>
         <div class="headwrap">
             <div class="logowrap">
                 <img src="https://assets.codepen.io/t-15440/cannons-coffee-logo.png"
-                    alt="Cannons Coffee, Beans of Joy! Est. 2014" />
+                alt="Cannons Coffee, Beans of Joy! Est. 2014" />
                 <h1>Cannons Coffee</h1>
             </div>
             <nav>
@@ -31,23 +30,23 @@
     <main class="contact-page">
         <div class="contact-form">
             <h2>Contact Us</h2>
-            <form id="contactForm" action="#" method="post">
+            <form id="contactForm" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 <br>
-
+                
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
                 <br>
-
+                
                 <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone">
+                <input type="tel"  class="phone" id="phone" name="phone" placeholder="(555) 555-5555" required>
                 <br>
-
+                
                 <label for="comments">Comments:</label>
                 <textarea id="comments" name="comments" rows="4"></textarea>
                 <br>
-
+                
                 <label for="flavor">Choose your favorite! </label>
                 <select id="flavor" name="flavor" required>
                     <option value="latte">Latte</option>
@@ -57,14 +56,14 @@
                     <option value="cappuccino">Cappuccino</option>
                 </select>
                 <br>
-
+                
                 <label for="buywork">Are you a client or applicant?</label>
                 <input type="radio" id="client" name="buywork" value="client" required>
                 <label for="client">Client</label>
                 <input type="radio" id="applicant" name="buywork" value="applicant" required>
                 <label for="applicant">Applicant</label>
                 <br><br>
-
+                
                 <button type="submit">Send Message</button>
             </form>
         </div>
@@ -72,11 +71,12 @@
     </main>
     <footer>
         <img src="https://assets.codepen.io/t-15440/cannons-coffee-logo.png"
-            alt="Cannons Coffee, Beans of Joy! Est. 2014" />
+        alt="Cannons Coffee, Beans of Joy! Est. 2014" />
         <h2>CANNONS COFFEE</h2>
         <h7>EST. 2014</h7>
         <h5>&copy; Cannons Coffee. All Rights Reserved.</h5>
     </footer>
+    <script src="js/custom-contact.js"></script>
 </body>
 
 </html>

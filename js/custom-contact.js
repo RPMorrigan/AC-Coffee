@@ -11,6 +11,7 @@ function onSubmit(e) {
 
     let name = dataObj.name;
     let email = dataObj.email;
+    let phone = dataObj.phone;
     let comments = dataObj.comments;
     let flavor = dataObj.flavor;
     let buywork = dataObj.buywork;
