@@ -33,14 +33,12 @@ header {
   flex-wrap: wrap;
   color: white;
   text-transform: uppercase;
+  justify-content: space-between;
   padding: 1rem 2rem;
 }
-
 .logowrap {
   display: flex;
   flex-flow: row wrap;
-  margin-left: auto;
-  margin-right: auto;
   justify-content: center;
 }
 header img{
@@ -58,7 +56,7 @@ h1 {
 nav {
   display: flex;
   justify-content: center;
-  padding: 0 0 1.5rem 0;
+  align-items: center;
   margin-top: 0;
 }
 nav ul {
@@ -202,15 +200,8 @@ footer h2 {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-/* contact page */
-.contact-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 400px;
+@media (max-width: 999px) { 
+  header {
+    justify-content: center;
+  }
 }
