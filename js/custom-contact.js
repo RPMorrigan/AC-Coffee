@@ -14,9 +14,13 @@ function onSubmit(e) {
     let phone = dataObj.phone;
     let comments = dataObj.comments;
     let flavor = dataObj.flavor;
+    let buyingWorking = dataObj.buywork;
 
     let confirmationMsg = document.createElement("p");
-    confirmationMsg.textContent = `Thank you ${name}! We appreciate your interest in [buying/seeking emplayment]. Your favorite coffee flavor is ${flavor}, and your comments are ${comments}. We will soon contact you at ${email} or ${phone}.`;
+    confirmationMsg.textContent = `Thank you ${name}! We appreciate your interest in seeking emplayment. Your favorite coffee flavor is ${flavor}, and your comments are ${comments}. We will soon contact you at ${email} or ${phone}.`;
+
+    let userContact = document.querySelector(".userInput");
+    userContact.appendChild(confirmationMsg);
 
 	console.log("our data:", dataObj);
 	form.reset();
