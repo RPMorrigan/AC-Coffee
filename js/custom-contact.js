@@ -1,5 +1,5 @@
 let container = document.querySelector(".contact-page");
-let form = document.getElementById("ContactForm");
+let form = document.getElementById("contactForm");
 
 form.addEventListener("submit", onSubmit);
 
