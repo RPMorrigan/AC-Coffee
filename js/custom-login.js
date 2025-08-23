@@ -16,7 +16,7 @@ function onFormSubmit(e) {
     let wlcm = document.querySelector(".welcome");
     wlcm.appendChild(welcome);
 
-    console.log(welcome);
+    console.log(dataObj);
     form.reset();
 }
 
